@@ -6,7 +6,7 @@
 /*   By: vimafra- <vimafra-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 13:42:00 by vimafra-          #+#    #+#             */
-/*   Updated: 2024/11/19 16:40:21 by vimafra-         ###   ########.fr       */
+/*   Updated: 2024/11/19 14:52:09 by vimafra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ int	ft_putstr(char *s)
 	int	i;
 
 	i = 0;
-	if (!s) //Se a string recebida for nula, precisa escrever "(null)" no terminal
+	if (!s)
 	{
 		write(1, "(null)", 6);
-		return (6); // Retorna o número de caracteres de "(null)"
+		return (6);
 	}
 	while (s[i] != '\0')
 	{
